@@ -1,0 +1,94 @@
+.nav__toggle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  appearance: none;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.nar__toggle:focus {
+  outline: 1px solid #333;
+}
+
+/* below CSS adapted from https://css.gg under the MIT License */
+.nav__icon {
+  box-sizing: border-box;
+  position: relative;
+  display: block;
+  transform: scale(var(--ggs, 1));
+  width: 18px;
+  height: 18px;
+  border-radius: 3px;
+  border: 2px solid;
+}
+
+.nav__icon::before {
+  content: "";
+  display: block;
+  box-sizing: border-box;
+  position: absolute;
+  width: 10px;
+  height: 2px;
+  background: currentColor;
+  border-radius: 3px;
+  top: 2px;
+  left: 2px;
+  box-shadow: 0 4px 0, 0 8px 0;
+}
+/* above CSS adapted from https://css.gg under the MIT License */
+
+.nav__list {
+  position: absolute;
+  right: 0;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  background-color: #feda00;
+
+  list-style: none;
+}
+
+.nav__list--hidden {
+  display: none;
+}
+
+.nav__item {
+  margin: 0.5rem;
+}
+
+.nav__link {
+  padding: 0.5rem;
+  color: black;
+
+  text-decoration: none;
+}
+
+.nav__link:hover {
+  color: #feda00;
+  background-color: #333;
+}
+
+@media (width >= 44rem) {
+  .nav__toggle {
+    display: none;
+  }
+
+  .nav__list {
+    position: static;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+
+  .nav__link:hover, .nav__link:focus {
+    border-radius: 5px;
+  }
+
+  .nav__list--hidden {
+    display: flex;
+  }
+}

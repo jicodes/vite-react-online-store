@@ -1,0 +1,41 @@
+.link-button {
+  padding: 0.5rem;
+
+  color: var(--color-fg-link-button);
+  background-color: transparent;
+
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.link-button:hover {
+  color: #2980b9;
+}
+
+.normal-button {
+  padding: 0.5rem 1rem;
+
+  background-color: #fed800;
+
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.normal-button:hover {
+  background-color: #e9c005;
+}
+
+.default-button {
+  padding: 0.5rem 1rem;
+
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.default-button:hover {
+  background-color: #fed800;
+}

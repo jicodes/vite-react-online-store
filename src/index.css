@@ -1,0 +1,33 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  height: 100%;
+
+  font-family: sans-serif;
+  line-height: 1.6;
+}
+
+#root {
+  height: 100%;
+}
+
+[data-theme="light"] {
+  --color-bg: #fff;
+  --color-fg: #000;
+  --color-bg-card: #eee;
+  --color-fg-link-button: #005b96;
+}
+
+[data-theme="dark"] {
+  --color-bg: #333;
+  --color-fg: #feda00;
+  --color-bg-card: #222;
+  --color-fg-link-button: #316dca;
+}

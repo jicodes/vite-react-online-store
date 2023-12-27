@@ -1,0 +1,21 @@
+.app {
+  display: flex;
+  flex-direction: column;
+  place-items: center;
+
+  height: 100%;
+}
+
+.skip-to-content-link {
+  position: absolute;
+  left: 50%;
+  transform: translateY(-100%);
+
+  padding: 0.5rem;
+  color: #fed800;
+  background: #333;
+}
+
+.skip-to-content-link:focus {
+  transform: translate(-50%, 0%);
+}

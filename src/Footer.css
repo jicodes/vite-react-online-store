@@ -1,0 +1,261 @@
+.footer {
+  width: 100%;
+  min-width: 22.5rem;
+
+  color: #333;
+  background-color: #feda00;
+  text-align: center;
+}
+
+.link-title {
+  padding: 0.5rem;
+}
+
+.link-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  list-style-type: none;
+}
+
+.link-item {
+  text-align: center;
+}
+
+.link-item a {
+  display: inline-block;
+  padding: 0.5rem;
+  color: #333;
+}
+
+.link-item a:hover {
+  color: #feda00;
+  background-color: #333;
+}
+
+.theme__button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 2rem;
+  height: 2rem;
+  margin: 0.5rem;
+  border-radius: 5px;
+
+  color: #333;
+  background-color: transparent;
+
+  cursor: pointer;
+}
+
+.theme__button:hover,
+.theme__button--active {
+  color: #feda00;
+  background-color: #333;
+}
+
+@media (width >= 44rem) {
+  .footer {
+    display: flex;
+    justify-content: start;
+  }
+
+  .footer__links {
+    margin: 1rem;
+    text-align: left;
+  }
+
+  .link-list {
+    flex-direction: row;
+  }
+
+  .theme__button {
+    margin: 0 0.5rem;
+  }
+}
+
+/* below CSS adapted from https://css.gg under the MIT License */
+.icon-facebook {
+  box-sizing: border-box;
+  position: relative;
+  display: block;
+  transform: scale(var(--ggs, 1));
+  width: 20px;
+  height: 20px;
+}
+
+.icon-facebook::after,
+.icon-facebook::before {
+  content: "";
+  display: block;
+  position: absolute;
+  box-sizing: border-box;
+}
+
+.icon-facebook::before {
+  width: 8px;
+  height: 20px;
+  border-left: 4px solid;
+  border-top: 4px solid;
+  border-top-left-radius: 5px;
+  left: 6px;
+}
+
+.icon-facebook::after {
+  width: 10px;
+  height: 4px;
+  background: currentColor;
+  top: 7px;
+  left: 4px;
+  transform: skew(-5deg);
+}
+
+.icon-instagram {
+  box-sizing: border-box;
+  position: relative;
+  display: block;
+  transform: scale(var(--ggs, 1));
+  border: 2px solid transparent;
+  box-shadow: 0 0 0 2px;
+  border-radius: 4px;
+  width: 20px;
+  height: 20px;
+}
+
+.icon-instagram::after,
+.icon-instagram::before {
+  content: "";
+  display: block;
+  box-sizing: border-box;
+  position: absolute;
+}
+
+.icon-instagram::after {
+  border: 2px solid;
+  left: 3px;
+  width: 10px;
+  height: 10px;
+  border-radius: 100%;
+  top: 3px;
+}
+
+.icon-instagram::before {
+  border-radius: 3px;
+  width: 2px;
+  height: 2px;
+  background: currentColor;
+  right: 1px;
+  top: 1px;
+}
+
+.icon-twitter {
+  box-sizing: border-box;
+  position: relative;
+  display: block;
+  transform: scale(var(--ggs, 1));
+  width: 20px;
+  height: 20px;
+}
+
+.icon-twitter::after,
+.icon-twitter::before {
+  content: "";
+  display: block;
+  position: absolute;
+  box-sizing: border-box;
+  left: 4px;
+}
+
+.icon-twitter::before {
+  width: 9px;
+  height: 14px;
+  border-left: 4px solid;
+  border-bottom: 4px solid;
+  border-bottom-left-radius: 6px;
+  background: linear-gradient(to left, currentColor 12px, transparent 0)
+    no-repeat center 2px/10px 4px;
+  top: 4px;
+}
+
+.icon-twitter::after {
+  width: 4px;
+  height: 4px;
+  background: currentColor;
+  border-radius: 20px;
+  top: 2px;
+  box-shadow: 7px 4px 0, 7px 12px 0;
+}
+
+.theme__icon--light {
+  box-sizing: border-box;
+  position: relative;
+  display: block;
+  transform: scale(var(--ggs, 1));
+  width: 24px;
+  height: 24px;
+  background: linear-gradient(to bottom, currentColor 4px, transparent 0)
+      no-repeat 5px -6px/2px 6px,
+    linear-gradient(to bottom, currentColor 4px, transparent 0) no-repeat 5px
+      14px/2px 6px,
+    linear-gradient(to bottom, currentColor 4px, transparent 0) no-repeat -8px 5px/6px
+      2px,
+    linear-gradient(to bottom, currentColor 4px, transparent 0) no-repeat 14px
+      5px/6px 2px;
+  border-radius: 100px;
+  box-shadow: inset 0 0 0 2px;
+  border: 6px solid transparent;
+}
+
+.theme__icon--light::after,
+.theme__icon--light::before {
+  content: "";
+  display: block;
+  box-sizing: border-box;
+  position: absolute;
+  width: 24px;
+  height: 2px;
+  border-right: 4px solid;
+  border-left: 4px solid;
+  left: -6px;
+  top: 5px;
+}
+
+.theme__icon--light::before {
+  transform: rotate(-45deg);
+}
+
+.theme__icon--light::after {
+  transform: rotate(45deg);
+}
+
+.theme__icon--dark,
+.theme__icon--dark::after {
+  display: block;
+  box-sizing: border-box;
+  border-radius: 50%;
+}
+
+.theme__icon--dark {
+  overflow: hidden;
+  position: relative;
+  transform: rotate(-135deg) scale(var(--ggs, 1));
+  width: 20px;
+  height: 20px;
+  border: 2px solid;
+  border-bottom-color: transparent;
+}
+
+.theme__icon--dark::after {
+  content: "";
+  position: absolute;
+  width: 12px;
+  height: 18px;
+  border: 2px solid transparent;
+  box-shadow: 0 0 0 2px;
+  top: 8px;
+  left: 2px;
+}
+
+/* above CSS adapted from https://css.gg under the MIT License */

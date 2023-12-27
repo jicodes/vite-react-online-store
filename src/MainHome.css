@@ -1,0 +1,41 @@
+.main {
+  flex-grow: 1;
+
+  display: flex;
+  flex-direction: column;
+
+  width: 100%;
+  min-width: 22.5rem;
+  
+  color: var(--color-fg);
+  background-color: var(--color-bg);
+}
+
+.home__title {
+  margin: 1rem;
+  padding-top: 0.5rem;
+
+  border-bottom: 2px solid #feda00;
+}
+
+.home__see-menu {
+  width: 80%;
+  font-size: 1.5rem;
+
+  align-self: center;
+}
+
+.home__newsletter,
+.home__newsletter--subscribed {
+  margin: 1rem;
+  text-align: center;
+}
+
+.home__newsletter--subscribed span {
+  font-size: 1.4rem;
+  font-style: italic;
+}
+
+.home__subscribe{
+  font-size: 1.5rem;
+}

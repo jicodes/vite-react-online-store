@@ -1,0 +1,48 @@
+.panel {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.panel__image {
+  align-self: center;
+
+  width: clamp(20rem, 95%, 30rem);
+  padding: 1rem;
+}
+
+.panel__title {
+  text-align: center;
+}
+
+.panel__text {
+  padding: 0.5rem 1rem ;
+  line-height: 1.2;
+}
+
+@media (width >= 44rem) {
+  .panel {
+    display: block;
+    overflow: hidden;
+  }
+
+  .panel:nth-child(odd) .panel__image {
+    float: right;
+  }
+
+  .panel:nth-child(even) .panel__image {
+    float: left;
+  }
+
+  .panel__image {
+    width: clamp(20rem, 50%, 35rem);
+  }
+
+  .panel__title {
+    margin-top: 3rem;
+  }
+
+  .panel__text {
+    line-height: 1.6;
+  }
+}

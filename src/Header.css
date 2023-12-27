@@ -1,0 +1,51 @@
+.header {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+
+  width: 100%;
+  min-width: 22.5rem;
+
+  background-color: #feda00;
+  align-items: center;
+}
+
+.header__link {
+  grid-column: 1 / span 3;
+
+  display: flex;
+  align-items: center;
+}
+
+.header__link:hover {
+  rotate: 360deg;
+}
+
+.header__logo {
+  width: 80px;
+  height: 80px;
+  margin: 1rem;
+
+  border-radius: 50%;
+  justify-self: center;
+}
+
+.header__title {
+  grid-column: 4 / span 6;
+
+  text-align: center;
+}
+
+.header__nav {
+  grid-column: 12 / span 1;
+  position: relative;
+}
+
+@media (width >= 44rem) {
+  .header__nav {
+    grid-column: 1 / span 12;
+  }
+
+  .nav__toggle {
+    display: none;
+  }
+}
