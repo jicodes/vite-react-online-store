@@ -6,7 +6,7 @@ import plateCurryUrl from './assets/plate-curry.jpg';
 import plateSpaghettiUrl from './assets/plate-spaghetti.jpg';
 import tacoBeefUrl from './assets/taco-beef.jpg';
 import tacoChickenUrl from './assets/taco-chicken.jpg';
-import tacoSpicyUrl from './assets/taco-Spicy.jpg';
+import tacoSpicyUrl from './assets/taco-spicy.jpg';
 
 const menuData = {
   "Breakfast": [
