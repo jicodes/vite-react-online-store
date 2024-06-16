@@ -59,5 +59,9 @@ A Single Page Application (SPA) for online store build with React and Vite.
 
 `npm run build`
 
-open the project at `localhost:3000`
+`npm run preview`
+
+Then
+
+visit the project at `localhost:4173`
 
